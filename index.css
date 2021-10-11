@@ -1,0 +1,27 @@
+
+body {
+    background-color: white;
+}
+
+#container {
+    width: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.flexitem {
+    width: 50px;
+    height: 50px;
+    border: 3px solid red;
+}
+
+.column:hover{
+    background-color: blue;
+}
