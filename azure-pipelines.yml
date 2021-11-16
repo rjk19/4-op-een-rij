@@ -6,12 +6,13 @@
 trigger:
 - master
 
+variables:
+  name: Reese
+
 pool:
   vmImage: ubuntu-latest
 
-steps:
-- task: ArchiveFiles@2
-  inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-    includeRootFolder: false
-- task: PublishBuildArtifacts@1
+jobs:
+  - job: helloworld
+    steps:
+      - script: echo "Wassup $(name)"
